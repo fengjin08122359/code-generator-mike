@@ -1,0 +1,316 @@
+{
+	"info": {
+		"_postman_id": "6bdd6183-e2a9-42d3-8a4b-9b967f3f84e7",
+		"name": "工单处理",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "获取下一个节点的候选人及候选组",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "activitiProcKey",
+							"value": "KEY_leave",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{http}}/nid/rutask/nextTaskGroup",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"rutask",
+						"nextTaskGroup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "工单创建接口",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"workName\":\"客诉第六单\",\r\n\"channel\":\"0\",\r\n\"procKey\":\"KEY_leave\",\r\n\"description\":\"发起投诉\",\r\n\"priority\":\"3\",\r\n\"userId\":\"d6936c3eebf64eefa4996f145c1f6904\",\r\n\"assignee\":\"d6936c3eebf64eefa4996f145c1f6904\",\r\n\"nextTaskRoleId\":\"69d31557ead74128afa9d06610de36ff\",\r\n\"categoryId\":\"3d36ee71f66e43339199e973ad6e6698\"}"
+				},
+				"url": {
+					"raw": "{{http}}/nid/workorderinfo/create",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"workorderinfo",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "查询我的待处理的任务",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"pageNum\":\"1\",\n\"pageSize\":\"10\"\n}"
+				},
+				"url": {
+					"raw": "{{http}}/nid/myTask/myPendingTask",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"myTask",
+						"myPendingTask"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "工单处理接口",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"taskId\":\"377509\",\n\"workId\":\"d7ba7b0fcd7a41feb2f752b01e6145c1\",\n\"assginee\":\"d6936c3eebf64eefa4996f145c1f6904\",\n\"operate\":\"yes\",\n\"opinion\":\"感觉阔以\",\n\"userId\":\"d6936c3eebf64eefa4996f145c1f6904\"\n}"
+				},
+				"url": {
+					"raw": "{{http}}/nid/rutask/handle",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"rutask",
+						"handle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "自定义查询",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":\"d6936c3eebf64eefa4996f145c1f6904\"\n\t\n}"
+				},
+				"url": {
+					"raw": "{{http}}/nid/userDef/query?pageSize=2&pageNum=1",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"userDef",
+						"query"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "2"
+						},
+						{
+							"key": "pageNum",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "工单细分类查询",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{http}}/nid/category/list",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"category",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "我的-已处理的工单",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":\"d6936c3eebf64eefa4996f145c1f6904\"\n}"
+				},
+				"url": {
+					"raw": "{{http}}/nid/myTask/myProcessedTask?pageSize=2&pageNum=1",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"myTask",
+						"myProcessedTask"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "2"
+						},
+						{
+							"key": "pageNum",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "我的-待处理的工单",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"userId\":\"d6936c3eebf64eefa4996f145c1f6904\"\n}"
+				},
+				"url": {
+					"raw": "{{http}}/nid/myTask/myPendingTask?pageSize=2&pageNum=1",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"myTask",
+						"myPendingTask"
+					],
+					"query": [
+						{
+							"key": "pageSize",
+							"value": "2"
+						},
+						{
+							"key": "pageNum",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "获得所有流程标识KEY",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "DICTIONARIES_ID",
+							"value": "11111111111111111111111111111111",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{http}}/nid/dictionaries/getProcKeys",
+					"host": [
+						"{{http}}"
+					],
+					"path": [
+						"nid",
+						"dictionaries",
+						"getProcKeys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "登录",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loginCode",
+							"value": "VqfxX9IMm5lhNr5Sd4xjwuGHUtO0q9nF",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8099/nid/main/index",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"nid",
+						"main",
+						"index"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

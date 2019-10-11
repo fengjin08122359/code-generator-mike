@@ -1,0 +1,1270 @@
+{
+	"info": {
+		"name": "工单系统",
+		"_postman_id": "2e5f8ee0-402d-82d9-5ad2-e7025d9dfc48",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "角色相关",
+			"description": "",
+			"item": [
+				{
+					"name": "查询角色列表",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "groupId",
+									"value": "291757f5f50449abad2d336fe5e46494",
+									"type": "text"
+								},
+								{
+									"key": "pageNum",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pageSize",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/role/roleList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"role",
+								"roleList"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "查询角色组列表",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8099/nid/role/groupList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"role",
+								"groupList"
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "bb77f5f3-4fbd-4e2b-acb6-8183e54b1d20",
+							"name": "查询角色组列表",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"name": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:8099/nid/role/groupList",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8099",
+									"path": [
+										"nid",
+										"role",
+										"groupList"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true",
+									"name": "Access-Control-Allow-Credentials",
+									"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+									"name": "Access-Control-Allow-Headers",
+									"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, DELETE",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "0",
+									"name": "Access-Control-Max-Age",
+									"description": "Indicates how long the results of a preflight request can be cached in seconds."
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Aug 2019 02:10:07 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "XDomainRequestAllowed",
+									"value": "1",
+									"name": "XDomainRequestAllowed",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/nid",
+									"secure": false,
+									"value": "F613A057949EFF608C82AA6BD9FD335D",
+									"key": "JSESSIONID"
+								},
+								{
+									"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/",
+									"secure": false,
+									"value": "258A438DD5A4E2C5793BCA6F99142FE3",
+									"key": "JSESSIONID"
+								}
+							],
+							"responseTime": 55,
+							"body": "{\"status\":200,\"msg\":null,\"data\":{\"roleGroupVOList\":[{\"groupId\":\"a5e067ab7caf433f81670666e68b3ea4\",\"groupName\":\"角色组3\",\"status\":0,\"remark\":\"顶顶顶顶顶\",\"flowKey\":\"11111111111111111111111111111111\",\"flowName\":\"测试标识\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"3a22f696d21e42f2a920c581bdbd6527\",\"groupName\":\"测试\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190814558674\",\"flowName\":\"补划工单\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"78ecbaa0ea604043afa4964ae5145177\",\"groupName\":\"123\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190813981818\",\"flowName\":\"apple流程4\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"625d1737c2784ec087b92a1e7d1d7633\",\"groupName\":\"66777\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190812787210\",\"flowName\":\"售后流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"6714fb29e582451a82b251360d51bcb9\",\"groupName\":\"123\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190810790652\",\"flowName\":\"测试测试\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"30da39dfeb7942c8bc825bb8aa0d6c9f\",\"groupName\":\"23423423\",\"status\":0,\"remark\":\"\",\"flowKey\":\"ff620d6da8914b6d846cf1d971e0cc7d\",\"flowName\":\"ching测试流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"3caa2dbfc17b47f2b7097eaf93418d47\",\"groupName\":\"0814流程组01\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190814784841\",\"flowName\":\"0814流程组01\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"cd56d37727694ba68b04bda95de37e80\",\"groupName\":\"流程串串\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190810310990\",\"flowName\":\"请假流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"d1531a661086460f9209a1ec4a703801\",\"groupName\":\"12312312\",\"status\":1,\"remark\":\"\",\"flowKey\":\"e6247346a7064b3799b97837efd8325d\",\"flowName\":\"测试流程1\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"72c2c109fb3541fbb42990456af2a05b\",\"groupName\":\"驳回角色组\",\"status\":1,\"remark\":\"\",\"flowKey\":\"key_20190813582777\",\"flowName\":\"apple测试驳回流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"fd00d6efd44d40e98429889b156fe07f\",\"groupName\":\"新建角色组\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190810880378\",\"flowName\":\"Apple专用流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"32a4b0d21a7a4b2a953f1cfc29556c3f\",\"groupName\":\"补划工单角色组\",\"status\":1,\"remark\":\"\",\"flowKey\":\"key_20190813482131\",\"flowName\":\"补划工单\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"ece7df6ddb13441297d668035646b027\",\"groupName\":\"apple角色组3\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190813652539\",\"flowName\":\"apple流程3\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"f4948bb5ceda40d4a65559d93a575059\",\"groupName\":\"哈哈\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190810585951\",\"flowName\":\"测试流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"f081974aceef43c19ff1f73220604709\",\"groupName\":\"apple角色组2\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190813818150\",\"flowName\":\"apple流程2\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"02757e40925a457e85b664f56c8bdf4f\",\"groupName\":\"apple角色组1\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190813483503\",\"flowName\":\"apple流程1\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"58c7fb82e3af4c13a5fda1330736ec0d\",\"groupName\":\"apple新角色组\",\"status\":1,\"remark\":\"\",\"flowKey\":\"key_20190812226595\",\"flowName\":\"apple测试流程1\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"e147c7bcff2148a1ade0fa20942b7043\",\"groupName\":\"apple\",\"status\":1,\"remark\":\"\",\"flowKey\":\"key_20190812889263\",\"flowName\":\"新建apple的流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"d17d0bf3adea465285671ccc15b75534\",\"groupName\":\"禁用角色组\",\"status\":0,\"remark\":\"\",\"flowKey\":\"key_20190810756901\",\"flowName\":\"测试禁用角色\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"6a0a25baf9964e8a9e3eb5a0357294e1\",\"groupName\":\"apple专用角色组\",\"status\":1,\"remark\":\"\",\"flowKey\":\"key_20190812889263\",\"flowName\":\"新建apple的流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"a01de46913c7468bac2df8daccfb79fc\",\"groupName\":\"ching测试专用0809\",\"status\":1,\"remark\":\"\",\"flowKey\":\"0f620d6da8914b6d846cf1d971e0cc7d\",\"flowName\":\"ching测试流程\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"47a7206419e94cf494850927c92e961e\",\"groupName\":\"流程串串\",\"status\":1,\"remark\":\"\",\"flowKey\":\"e7f539042c50490fbb22c65ce89f830c\",\"flowName\":\"流程串串\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"},{\"groupId\":\"291757f5f50449abad2d336fe5e46494\",\"groupName\":\"weeks测试\",\"status\":1,\"remark\":\"\",\"flowKey\":\"key_20190810430232\",\"flowName\":\"\",\"companyId\":\"40288b01609bbb5d01609bc860d10001\"}]},\"timestamp\":1566180607122,\"success\":true}"
+						}
+					]
+				},
+				{
+					"name": "获得单个角色组",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "groupId",
+									"value": "69d31557ead74128afa9d06610de36ff",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:10009/nid/role/toEditGroup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "10009",
+							"path": [
+								"nid",
+								"role",
+								"toEditGroup"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "获得单个角色",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "roleId",
+									"value": "059290c9be7b4e7abf9fa8b41e593742",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/role/toEditRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"role",
+								"toEditRole"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "新增单个角色组",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"groupName\":\"所属\",\"status\":1,\"remark\":null\n,\"companyId\":\"\",\"flowKey\":\"11111111111111111111111111111111\",\"flowName\":\"测试标识\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/role/addGroup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"role",
+								"addGroup"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "新增单个角色",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"companyId\": \"\",\r\n  \"parentId\": \"291757f5f50449abad2d336fe5e46494\",\r\n  \"remark\": \"string\",\r\n  \"rnumber\": \"\",\r\n  \"roleId\": \"\",\r\n  \"roleName\": \"cc\",\r\n  \"status\": 0,\r\n  \"userIds\": [\r\n    \"string\"\r\n  ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/role/addRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"role",
+								"addRole"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "编辑单个角色组",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"groupName\":\"测试\",\"parentId\":\"\",\"status\":0,\"remark\":\"顶顶顶顶顶\"\n,\"flowKey\":\"11111111111111111111111111111111\",\"flowName\":\"测试标识\",\"groupId\":\"a5e067ab7caf433f81670666e68b3ea4\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/role/editGroup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"role",
+								"editGroup"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "编辑单个角色",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"roleName\":\"cc\",\"parentId\":\"291757f5f50449abad2d336fe5e46494\",\"status\":0,\"remark\":\"顶顶顶顶顶\"\n,\"userIds\":[],\"roleId\":\"f3f37d73db93440fa4b594328f87cafe\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/role/editRole",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"role",
+								"editRole"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "删除角色或者角色组",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "roleId",
+									"value": "36fb8f0ebe264c39b1c0025b9421fb66",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/role/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"role",
+								"delete"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "表单相关",
+			"description": "",
+			"item": [
+				{
+					"name": "添加表单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "str",
+									"value": "{\"des\":\"测试数据7311\",\"dropColumn\":[],\"isUse\":0,\"name\":\"测试数据7311\",\"panelAllList\":[{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"input\",\"fieldName\":\"\",\"indexOrder\":1,\"settingJson\":\"{\\\"title\\\":\\\"文本框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"minNumber\\\":\\\"0\\\",\\\"maxNumber\\\":\\\"300\\\",\\\"componentType\\\":\\\"input\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"defaultPrompt\\\":\\\"\\\",\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569971701\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":1,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"textarea\",\"fieldName\":\"\",\"indexOrder\":2,\"settingJson\":\"{\\\"title\\\":\\\"多行文本框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"minNumber\\\":\\\"0\\\",\\\"maxNumber\\\":\\\"500\\\",\\\"componentType\\\":\\\"textarea\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"defaultPrompt\\\":\\\"\\\",\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569972762\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":2,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"radio\",\"fieldName\":\"\",\"indexOrder\":3,\"settingJson\":\"{\\\"title\\\":\\\"单选框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"radio\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0}],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569973477\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":2}\"}],\"indexOrder\":3,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"checkbox\",\"fieldName\":\"\",\"indexOrder\":4,\"settingJson\":\"{\\\"title\\\":\\\"复选框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"checkbox\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0}],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569974151\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":2}\"}],\"indexOrder\":4,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"select\",\"fieldName\":\"\",\"indexOrder\":5,\"settingJson\":\"{\\\"title\\\":\\\"下拉菜单\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"select\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\"}],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569974938\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":2}\"}],\"indexOrder\":5,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"multistage\",\"fieldName\":\"\",\"indexOrder\":6,\"settingJson\":\"{\\\"title\\\":\\\"多级下拉框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"multistage\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569975603\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"oneDefaultWord\\\":\\\"\\\",\\\"twoDefaultWord\\\":\\\"\\\",\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":6,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"enclosure\",\"fieldName\":\"\",\"indexOrder\":7,\"settingJson\":\"{\\\"title\\\":\\\"附件\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"enclosure\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569976531\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":[],\\\"optionLen\\\":-1}\"}],\"indexOrder\":7,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"number\",\"fieldName\":\"\",\"indexOrder\":8,\"settingJson\":\"{\\\"title\\\":\\\"数字\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"minNumber\\\":\\\"0\\\",\\\"maxNumber\\\":\\\"300\\\",\\\"componentType\\\":\\\"number\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"defaultPrompt\\\":\\\"\\\",\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569977368\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":\\\"0\\\",\\\"maxLimitNumber\\\":\\\"300\\\",\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":8,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"time\",\"fieldName\":\"\",\"indexOrder\":9,\"settingJson\":\"{\\\"title\\\":\\\"日期\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"time\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564569978524\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":1,\\\"earSpecifiedTime\\\":\\\"\\\",\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":1,\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":\\\"\\\",\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":9,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1}],\"status\":1,\"type\":12,\"userNum\":\"1\"}",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:10009/nid/Form/addForm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "10009",
+							"path": [
+								"nid",
+								"Form",
+								"addForm"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "预览表单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "formUuid",
+									"value": "`8ca9684cc3374a9eb8c568b9c718a2dc`",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "authToken",
+									"value": "11111111",
+									"type": "text",
+									"description": "",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/Form/getForm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"Form",
+								"getForm"
+							]
+						},
+						"description": ""
+					},
+					"response": [
+						{
+							"id": "45c6a7d0-a443-4125-bee8-596fc0ce07cf",
+							"name": "预览表单",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"type": "text",
+										"name": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "formUuid",
+											"value": "`8ca9684cc3374a9eb8c568b9c718a2dc`",
+											"type": "text",
+											"description": ""
+										},
+										{
+											"key": "authToken",
+											"value": "11111111",
+											"type": "text",
+											"description": "",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8099/nid/Form/getForm",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8099",
+									"path": [
+										"nid",
+										"Form",
+										"getForm"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"_postman_previewtype": "text",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Credentials",
+									"value": "true",
+									"name": "Access-Control-Allow-Credentials",
+									"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+								},
+								{
+									"key": "Access-Control-Allow-Headers",
+									"value": "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+									"name": "Access-Control-Allow-Headers",
+									"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+								},
+								{
+									"key": "Access-Control-Allow-Methods",
+									"value": "POST, GET, OPTIONS, DELETE",
+									"name": "Access-Control-Allow-Methods",
+									"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+								},
+								{
+									"key": "Access-Control-Max-Age",
+									"value": "0",
+									"name": "Access-Control-Max-Age",
+									"description": "Indicates how long the results of a preflight request can be cached in seconds."
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8",
+									"name": "Content-Type",
+									"description": "The mime type of this content"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Aug 2019 06:08:51 GMT",
+									"name": "Date",
+									"description": "The date and time that the message was sent"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked",
+									"name": "Transfer-Encoding",
+									"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+								},
+								{
+									"key": "XDomainRequestAllowed",
+									"value": "1",
+									"name": "XDomainRequestAllowed",
+									"description": "Custom header"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/nid",
+									"secure": false,
+									"value": "8CD964A33A577917D92E0E8B76B1AD37",
+									"key": "JSESSIONID"
+								},
+								{
+									"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+									"httpOnly": true,
+									"domain": "localhost",
+									"path": "/",
+									"secure": false,
+									"value": "258A438DD5A4E2C5793BCA6F99142FE3",
+									"key": "JSESSIONID"
+								}
+							],
+							"responseTime": 361,
+							"body": "{\"errcode\":200,\"errmsg\":null,\"data\":{\"formName\":\"测试数据7311\",\"formUuid\":\"`8ca9684cc3374a9eb8c568b9c718a2dc`\",\"formDes\":\"测试数据7311\",\"previewHtml\":\"<li class=\\\"text-content \\\" data-value=\\\"input\\\" data-key=\\\"1564569971701\\\" data-fieldName = \\\"cloum0_0\\\" data-style=\\\"input\\\" fieldName = \\\"cloum0_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\" data-style=\\\"input\\\" data-classifly=\\\"input\\\">文本框</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right \\\" >\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"all-box \\\">\\r\\n            <input type=\\\"text\\\" autocomplete=\\\"off\\\" class=\\\"text-inp all-form\\\" value =\\\"\\\" maxlength=\\\"300\\\"  name=\\\"nothing\\\" value =\\\"\\\"  maxlength=\\\"300\\\"  placeholder=\\\"\\\" />\\r\\n            <textarea name=\\\"\\\" class=\\\"all-form right-form-controls active\\\" maxlength=\\\"300\\\" cols=\\\"30\\\" rows=\\\"10\\\" ></textarea>\\r\\n        </div>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li><li class=\\\"text-content \\\" data-value=\\\"textarea\\\" data-key=\\\"1564569972762\\\" data-fieldName = \\\"cloum1_0\\\" data-style=\\\"textarea\\\" fieldName = \\\"cloum1_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\" data-style=\\\"textarea\\\" data-classifly=\\\"textarea\\\">多行文本框</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right \\\">\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"all-box  \\\">\\r\\n            <input type=\\\"text\\\" class=\\\"text-inp all-form active\\\"  maxlength=\\\"500\\\"  />\\r\\n            <textarea name=\\\"\\\" class=\\\"all-form right-form-controls\\\" cols=\\\"30\\\" rows=\\\"10\\\"  maxlength=\\\"500\\\" value =\\\"\\\"  placeholder=\\\"\\\" ></textarea>\\r\\n        </div>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li><li class=\\\"text-content roaiobox \\\" data-value=\\\"radio\\\" data-key=\\\"1564569973477\\\" data-fieldName = \\\"cloum2_0\\\" data-style=\\\"radio\\\" fieldName = \\\"cloum2_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\" data-style=\\\"radio\\\" data-classifly=\\\"radio\\\">单选框</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right \\\">\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"all-box row\\\">\\r\\n            <div class=\\\"list-style\\\">\\r\\n                        <label class=\\\"laychange col-md-4\\\">\\r\\n                        <span class=\\\"change-click\\\">\\r\\n                            <span class=\\\"all-form  radio-icon\\r\\n                                \\r\\n\\\"\\r\\n                                  >\\r\\n                            </span>\\r\\n                            <span class=\\\"list-number  dis\\\"></span>\\r\\n                            <span class=\\\"choose-some-list\\\" fieldname=\\\"cloum2_0_0\\\" optionNumber=\\\"\\\" optionName=\\\"选项1\\\" title=\\\"选项1\\\">选项1</span>\\r\\n                        </span>\\r\\n                        </label>\\r\\n                        <label class=\\\"laychange col-md-4\\\">\\r\\n                        <span class=\\\"change-click\\\">\\r\\n                            <span class=\\\"all-form  radio-icon\\r\\n                                \\r\\n\\\"\\r\\n                                  >\\r\\n                            </span>\\r\\n                            <span class=\\\"list-number  dis\\\"></span>\\r\\n                            <span class=\\\"choose-some-list\\\" fieldname=\\\"cloum2_0_1\\\" optionNumber=\\\"\\\" optionName=\\\"选项2\\\" title=\\\"选项2\\\">选项2</span>\\r\\n                        </span>\\r\\n                        </label>\\r\\n                        <label class=\\\"laychange col-md-4\\\">\\r\\n                        <span class=\\\"change-click\\\">\\r\\n                            <span class=\\\"all-form  radio-icon\\r\\n                                \\r\\n\\\"\\r\\n                                  >\\r\\n                            </span>\\r\\n                            <span class=\\\"list-number  dis\\\"></span>\\r\\n                            <span class=\\\"choose-some-list\\\" fieldname=\\\"cloum2_0_2\\\" optionNumber=\\\"\\\" optionName=\\\"选项3\\\" title=\\\"选项3\\\">选项3</span>\\r\\n                        </span>\\r\\n                        </label>\\r\\n            </div>\\r\\n            <label class=\\\"layother \\\">\\r\\n            <span class=\\\"box-float\\\">\\r\\n                <span fieldName=\\\"\\\" class=\\\"icon radio-icon disdis\\\"></span>\\r\\n                <span>其他</span>\\r\\n            </span>\\r\\n                <input type=\\\"text\\\" class=\\\"layother-border \\\" >\\r\\n            </label>\\r\\n            <p class=\\\"choose-lim\\\">至少选择<span class=\\\"min-choose\\\">2</span>项,至多选择<span class=\\\"max-choose\\\">3</span>项。</p>\\r\\n        </div>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li><li class=\\\"text-content roaiobox \\\" data-value=\\\"checkbox\\\" data-key=\\\"1564569974151\\\" data-fieldName = \\\"cloum3_0\\\" data-style=\\\"checkbox\\\" fieldName = \\\"cloum3_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\" data-style=\\\"checkbox\\\"\\r\\n              data-classifly=\\\"checkbox\\\">复选框</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right \\\">\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"all-box row\\\">\\r\\n            <div class=\\\"list-style\\\">\\r\\n                        <label class=\\\"laychange col-md-4\\\">\\r\\n                        <span class=\\\"change-click\\\">\\r\\n                            <span class=\\\"all-form checkbox-icon \\r\\n                            \\r\\n\\\">\\r\\n                            </span>\\r\\n                            <span class=\\\"list-number   \\\"></span>\\r\\n                            <span class=\\\"choose-some-list  \\\" fieldname=\\\"cloum3_0_0\\\" optionNumber=\\\"\\\" optionName=\\\"选项1\\\" title=\\\"选项1\\\">选项1</span>\\r\\n                        </span>\\r\\n                        </label>\\r\\n                        <label class=\\\"laychange col-md-4\\\">\\r\\n                        <span class=\\\"change-click\\\">\\r\\n                            <span class=\\\"all-form checkbox-icon \\r\\n                            \\r\\n\\\">\\r\\n                            </span>\\r\\n                            <span class=\\\"list-number   \\\"></span>\\r\\n                            <span class=\\\"choose-some-list  \\\" fieldname=\\\"cloum3_0_1\\\" optionNumber=\\\"\\\" optionName=\\\"选项2\\\" title=\\\"选项2\\\">选项2</span>\\r\\n                        </span>\\r\\n                        </label>\\r\\n                        <label class=\\\"laychange col-md-4\\\">\\r\\n                        <span class=\\\"change-click\\\">\\r\\n                            <span class=\\\"all-form checkbox-icon \\r\\n                            \\r\\n\\\">\\r\\n                            </span>\\r\\n                            <span class=\\\"list-number   \\\"></span>\\r\\n                            <span class=\\\"choose-some-list  \\\" fieldname=\\\"cloum3_0_2\\\" optionNumber=\\\"\\\" optionName=\\\"选项3\\\" title=\\\"选项3\\\">选项3</span>\\r\\n                        </span>\\r\\n                        </label>\\r\\n            </div>\\r\\n            <label class=\\\"layother \\\">\\r\\n                    <span class=\\\"box-float\\\">\\r\\n                        <span fieldName=\\\"\\\" class=\\\"icon checkbox-icon  disdis\\\"></span>\\r\\n                        <span>其他</span>\\r\\n                    </span>\\r\\n                <input type=\\\"text\\\" class=\\\"layother-border \\\" >\\r\\n            </label>\\r\\n            <p class=\\\"radio-error\\\"></p>\\r\\n            \\r\\n        </div>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li><li class=\\\"text-content \\\" data-value=\\\"select\\\"  data-key=\\\"1564569974938\\\" data-fieldName = \\\"cloum4_0\\\" data-style=\\\"select\\\" fieldName = \\\"cloum4_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\"\\r\\n              data-style=\\\"select\\\" data-classifly=\\\"select\\\">下拉菜单</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right \\\">\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"all-box\\\">\\r\\n            <select class=\\\"choicelist all-form\\\" data-live-search=\\\"true\\\" \\r\\n                    title=\\\"请选择\\\"    >\\r\\n                            <option fieldname=\\\"cloum4_0\\\" class=\\\"select-js\\\" fieldname1=\\\"cloum4_0_0\\\" value=\\\"选项1\\\" title=\\\"选项1\\\" >选项1</option>\\r\\n                            <option fieldname=\\\"cloum4_0\\\" class=\\\"select-js\\\" fieldname1=\\\"cloum4_0_1\\\" value=\\\"选项2\\\" title=\\\"选项2\\\" >选项2</option>\\r\\n                            <option fieldname=\\\"cloum4_0\\\" class=\\\"select-js\\\" fieldname1=\\\"cloum4_0_2\\\" value=\\\"选项3\\\" title=\\\"选项3\\\" >选项3</option>\\r\\n            </select>\\r\\n             <input type=\\\"text\\\" class=\\\"right-form-controls othereason \\\" >\\r\\n        </div>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li><li class=\\\"text-content \\\" data-value=\\\"multistage\\\" data-style=\\\"multistage\\\" data-fieldName=\\\"cloum5_0\\\" data-key=\\\"1564569975603\\\" fieldName = \\\"cloum5_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\" data-style=\\\"multistage\\\" data-classifly=\\\"multistage\\\">多级下拉框</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right \\\">\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"all-box some-sel-two \\\">\\r\\n            <select class=\\\"choicelist all-form input-first\\\"  data-live-search=\\\"true\\\" data-live-search-style=\\\"\\\"\\r\\n                    title=\\\"请选择\\\" readonly  >\\r\\n                <option class=\\\"select-title\\\">请选择</option>\\r\\n                            <option class=\\\"select-js\\\"  value=\\\"选项1\\\" num=\\\"1\\\">选项1</option>\\r\\n                            <option class=\\\"select-js\\\"  value=\\\"选项2\\\" num=\\\"2\\\">选项2</option>\\r\\n            </select>\\r\\n        </div>\\r\\n        <div class=\\\"all-box some-sel-two \\\">\\r\\n            <select class=\\\"choicelist all-form input-second\\\" data-live-search=\\\"true\\\" data-live-search-style=\\\"\\\"\\r\\n                    placeholder=\\\"请选择\\\"\\r\\n                    title=\\\"请选择\\\" readonly >\\r\\n                <option class=\\\"select-title\\\">请选择</option>\\r\\n            </select>\\r\\n        </div>\\r\\n        <div class=\\\"all-box some-sel-two hideactive \\\">\\r\\n            <select class=\\\"choicelist all-form input-third\\\" data-live-search=\\\"true\\\" data-live-search-style=\\\"\\\"\\r\\n                            required=\\\"required\\\"\\r\\n                    title=\\\"请选择\\\" readonly  >\\r\\n            </select>\\r\\n        </div>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li><li class=\\\"text-content \\\" data-value=\\\"enclosure\\\" data-style=\\\"enclosure\\\" data-fieldName = \\\"cloum6_0\\\" data-key=\\\"1564569976531\\\" fieldName = \\\"cloum6_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\" data-style=\\\"enclosure\\\" data-classifly=\\\"enclosure\\\">附件</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right numbercon-right \\\">\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"all-weight\\\">\\r\\n            <input type=\\\"text\\\" class=\\\"file-inp all-form\\\" placeholder=\\\"选择文件\\\" disabled  />\\r\\n\\r\\n            <span class=\\\"icon-jia ctlBtn\\\"></span>\\r\\n        </div>\\r\\n        <div class=\\\"defile\\\" >\\r\\n            <span class=\\\"def-tit\\\">已上传附件：</span>\\r\\n            <span class=\\\"filedata \\\">xxxx.xls</span>\\r\\n            <i class=\\\"def-ico\\\" ></i>\\r\\n        </div>\\r\\n        <!--上传的文件样式-->\\r\\n        <div class=\\\"all-file-scroll\\\">\\r\\n            <!--上传的文件列表-->\\r\\n            <ul class=\\\"files-local\\\">\\r\\n\\r\\n            </ul>\\r\\n        </div>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li><li class=\\\"text-content \\\" data-value=\\\"number\\\" data-key=\\\"1564569977368\\\" data-fieldName = \\\"cloum7_0\\\" data-style=\\\"number\\\" fieldName = \\\"cloum7_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\" data-style=\\\"number\\\" data-classifly=\\\"number\\\">数字</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right numbercon-right \\\">\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"all-box \\\">\\r\\n            <input type=\\\"text\\\" autocomplete=\\\"off\\\" class=\\\"number-inp all-form\\\"   data-max=\\\"1000000000\\\" name=\\\"twoNumber\\\" value=\\\"\\\"  placeholder=\\\"\\\" / >\\r\\n        </div>\\r\\n        <span class=\\\"ceil \\\">  </span>\\r\\n        <span class=\\\"percent \\\">%</span>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li>\\r\\n<li class=\\\"text-content \\\" data-fieldName=\\\"cloum8_0\\\" data-value=\\\"time\\\" data-style=\\\"time\\\" data-key=\\\"1564569978524\\\" fieldName = \\\"cloum8_0\\\">\\r\\n    <div class=\\\"widget-title\\\">\\r\\n        <span class=\\\"text-insert  \\\" data-style=\\\"time\\\">日期</span>\\r\\n        <span class=\\\"needs \\\">*</span>\\r\\n    </div>\\r\\n    <div class=\\\"textcon-right \\\">\\r\\n        <p class=\\\"detail\\\"></p>\\r\\n        <div class=\\\"box one-box one-box2 active\\\" type=\\\"1\\\">\\r\\n            <input type=\\\"text\\\" class=\\\"all-form data-form first\\\"   placeholder=\\\"年-月-日\\\" autocomplete=\\\"off\\\" value=\\\"\\\" readonly  fieldName = \\\"cloum8_0\\\" />\\r\\n        </div>\\r\\n    </div>\\r\\n    <span class=\\\"closed-icon icon\\\"></span>\\r\\n    <span class=\\\"copy-icon icon\\\"></span>\\r\\n    <div class=\\\"clearfix\\\"></div>\\r\\n</li>\",\"formAll\":{\"id\":20,\"userNum\":null,\"formUuid\":\"`8ca9684cc3374a9eb8c568b9c718a2dc`\",\"tableId\":20,\"name\":\"测试数据7311\",\"des\":\"测试数据7311\",\"status\":0,\"deleteFlag\":null,\"createTime\":\"2019-07-31T02:50:09.000+0000\",\"updateTime\":null,\"startTime\":null,\"endTime\":null,\"type\":null,\"typeName\":null,\"classification\":null,\"tableName\":null,\"isUse\":0,\"companyId\":null,\"panelAllList\":[{\"id\":70,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":1,\"createTime\":\"2019-07-31T02:50:09.000+0000\",\"updateTime\":\"2019-07-31T02:50:09.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":70,\"pId\":70,\"className\":\"org.fh.form.components.input.InputModule\",\"fieldName\":\"cloum0_0\",\"settingJson\":\"{\\\"comKey\\\":\\\"1564569971701\\\",\\\"componentType\\\":\\\"input\\\",\\\"defaultPrompt\\\":\\\"\\\",\\\"defaultValue\\\":\\\"\\\",\\\"des\\\":\\\"\\\",\\\"fieldName\\\":\\\"cloum0_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"isLimitedNumber\\\":0,\\\"isOnly\\\":0,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"maxNumber\\\":300,\\\"minNumber\\\":0,\\\"readOnly\\\":0,\\\"size\\\":1,\\\"textType\\\":0,\\\"title\\\":\\\"文本框\\\",\\\"titleLayout\\\":0}\",\"componentType\":\"input\",\"indexOrder\":1,\"createTime\":\"2019-07-31T02:50:09.000+0000\",\"updateTime\":\"2019-07-31T02:50:09.000+0000\"}]},{\"id\":71,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":2,\"createTime\":\"2019-07-31T02:50:09.000+0000\",\"updateTime\":\"2019-07-31T02:50:09.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":71,\"pId\":71,\"className\":\"org.fh.form.components.textarea.TextareaModule\",\"fieldName\":\"cloum1_0\",\"settingJson\":\"{\\\"comKey\\\":\\\"1564569972762\\\",\\\"componentType\\\":\\\"textarea\\\",\\\"defaultPrompt\\\":\\\"\\\",\\\"defaultValue\\\":\\\"\\\",\\\"des\\\":\\\"\\\",\\\"fieldName\\\":\\\"cloum1_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"isLimitedNumber\\\":0,\\\"isOnly\\\":0,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"maxNumber\\\":500,\\\"minNumber\\\":0,\\\"readOnly\\\":0,\\\"size\\\":1,\\\"title\\\":\\\"多行文本框\\\",\\\"titleLayout\\\":0}\",\"componentType\":\"textarea\",\"indexOrder\":2,\"createTime\":\"2019-07-31T02:50:09.000+0000\",\"updateTime\":\"2019-07-31T02:50:09.000+0000\"}]},{\"id\":72,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":3,\"createTime\":\"2019-07-31T02:50:09.000+0000\",\"updateTime\":\"2019-07-31T02:50:09.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":72,\"pId\":72,\"className\":\"org.fh.form.components.redio.RedioModule\",\"fieldName\":\"cloum2_0\",\"settingJson\":\"{\\\"associationField\\\":\\\"\\\",\\\"associationTable\\\":\\\"\\\",\\\"comKey\\\":\\\"1564569973477\\\",\\\"componentType\\\":\\\"radio\\\",\\\"des\\\":\\\"\\\",\\\"fieldName\\\":\\\"cloum2_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isOther\\\":0,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\"}],\\\"readOnly\\\":0,\\\"title\\\":\\\"单选框\\\",\\\"titleLayout\\\":0}\",\"componentType\":\"radio\",\"indexOrder\":3,\"createTime\":\"2019-07-31T02:50:09.000+0000\",\"updateTime\":\"2019-07-31T02:50:09.000+0000\"}]},{\"id\":73,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":4,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":73,\"pId\":73,\"className\":\"org.fh.form.components.checkbox.CheckboxModule\",\"fieldName\":\"cloum3_0\",\"settingJson\":\"{\\\"associationField\\\":\\\"\\\",\\\"associationTable\\\":\\\"\\\",\\\"comKey\\\":\\\"1564569974151\\\",\\\"componentType\\\":\\\"checkbox\\\",\\\"des\\\":\\\"\\\",\\\"fieldName\\\":\\\"cloum3_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isMultiSelect\\\":0,\\\"isOther\\\":0,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\"}],\\\"readOnly\\\":0,\\\"title\\\":\\\"复选框\\\",\\\"titleLayout\\\":0}\",\"componentType\":\"checkbox\",\"indexOrder\":4,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\"}]},{\"id\":74,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":5,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":74,\"pId\":74,\"className\":\"org.fh.form.components.select.SelectModule\",\"fieldName\":\"cloum4_0\",\"settingJson\":\"{\\\"comKey\\\":\\\"1564569974938\\\",\\\"componentType\\\":\\\"select\\\",\\\"des\\\":\\\"\\\",\\\"fieldName\\\":\\\"cloum4_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isOther\\\":0,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\"}],\\\"readOnly\\\":0,\\\"selectType\\\":0,\\\"title\\\":\\\"下拉菜单\\\",\\\"titleLayout\\\":0}\",\"componentType\":\"select\",\"indexOrder\":5,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\"}]},{\"id\":75,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":6,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":75,\"pId\":75,\"className\":\"org.fh.form.components.multselect.MultSelectModule\",\"fieldName\":\"cloum5_0\",\"settingJson\":\"{\\\"comKey\\\":\\\"1564569975603\\\",\\\"componentType\\\":\\\"multistage\\\",\\\"des\\\":\\\"\\\",\\\"fieldName\\\":\\\"cloum5_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isAllowPartBlank\\\":0,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"isOther\\\":0,\\\"setting\\\":[{\\\"id\\\":\\\"1\\\",\\\"isSelect\\\":0,\\\"nextOption\\\":{\\\"isOther\\\":0,\\\"setting\\\":[{\\\"id\\\":\\\"1\\\",\\\"isSelect\\\":0,\\\"nextOption\\\":{\\\"isOther\\\":0,\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}]},\\\"numId\\\":\\\"11\\\",\\\"optionName\\\":\\\"选项11\\\"},{\\\"id\\\":\\\"1\\\",\\\"isSelect\\\":0,\\\"nextOption\\\":{\\\"isOther\\\":0,\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}]},\\\"numId\\\":\\\"12\\\",\\\"optionName\\\":\\\"选项12\\\"}]},\\\"numId\\\":\\\"1\\\",\\\"optionName\\\":\\\"选项1\\\"},{\\\"id\\\":\\\"2\\\",\\\"isSelect\\\":0,\\\"nextOption\\\":{\\\"isOther\\\":0,\\\"setting\\\":[{\\\"id\\\":\\\"2\\\",\\\"isSelect\\\":0,\\\"nextOption\\\":{\\\"isOther\\\":0,\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}]},\\\"numId\\\":\\\"21\\\",\\\"optionName\\\":\\\"选项21\\\"},{\\\"id\\\":\\\"2\\\",\\\"isSelect\\\":0,\\\"nextOption\\\":{\\\"isOther\\\":0,\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}]},\\\"numId\\\":\\\"22\\\",\\\"optionName\\\":\\\"选项22\\\"}]},\\\"numId\\\":\\\"2\\\",\\\"optionName\\\":\\\"选项2\\\"}]},\\\"oneDefaultWord\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"title\\\":\\\"多级下拉框\\\",\\\"titleLayout\\\":0,\\\"twoDefaultWord\\\":\\\"\\\"}\",\"componentType\":\"multistage\",\"indexOrder\":6,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\"}]},{\"id\":76,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":7,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":76,\"pId\":76,\"className\":\"org.fh.form.components.enclosure.EnclosureModule\",\"fieldName\":\"cloum6_0\",\"settingJson\":\"{\\\"allowMany\\\":0,\\\"comKey\\\":\\\"1564569976531\\\",\\\"componentType\\\":\\\"enclosure\\\",\\\"des\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"[]\\\",\\\"fieldName\\\":\\\"cloum6_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"limitSize\\\":50.0,\\\"limitTypeArr\\\":[\\\"{\\\\\\\"parSelect\\\\\\\":1,\\\\\\\"parName\\\\\\\":\\\\\\\"文档\\\\\\\",\\\\\\\"checked\\\\\\\":[{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"txt\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"doc/docx\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"pdf\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"ppt/pptx\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"xls/xlsx\\\\\\\"}]}\\\",\\\"{\\\\\\\"parSelect\\\\\\\":1,\\\\\\\"parName\\\\\\\":\\\\\\\"图片\\\\\\\",\\\\\\\"checked\\\\\\\":[{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"jpg/jpeg\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"png\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"gif\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"bmp\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"psd\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"tiff\\\\\\\"}]}\\\",\\\"{\\\\\\\"parSelect\\\\\\\":1,\\\\\\\"parName\\\\\\\":\\\\\\\"视频\\\\\\\",\\\\\\\"checked\\\\\\\":[{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"avi\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"mp4\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"rmvb\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"3gp\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"mov\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"wmv\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"swf\\\\\\\"}]}\\\",\\\"{\\\\\\\"parSelect\\\\\\\":1,\\\\\\\"parName\\\\\\\":\\\\\\\"音频\\\\\\\",\\\\\\\"checked\\\\\\\":[{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"mp3\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"wma\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"m4a\\\\\\\"}]}\\\",\\\"{\\\\\\\"parSelect\\\\\\\":1,\\\\\\\"parName\\\\\\\":\\\\\\\"压缩包\\\\\\\",\\\\\\\"checked\\\\\\\":[{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"rar\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"zip\\\\\\\"},{\\\\\\\"childSelect\\\\\\\":1,\\\\\\\"childName\\\\\\\":\\\\\\\"7z\\\\\\\"}]}\\\"],\\\"readOnly\\\":0,\\\"title\\\":\\\"附件\\\",\\\"titleLayout\\\":0}\",\"componentType\":\"enclosure\",\"indexOrder\":7,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\"}]},{\"id\":77,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":8,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":77,\"pId\":77,\"className\":\"org.fh.form.components.number.NumberModule\",\"fieldName\":\"cloum7_0\",\"settingJson\":\"{\\\"comKey\\\":\\\"1564569977368\\\",\\\"componentType\\\":\\\"number\\\",\\\"decimalDigits\\\":2,\\\"defaultPrompt\\\":\\\"\\\",\\\"defaultValue\\\":\\\"\\\",\\\"des\\\":\\\"\\\",\\\"fieldName\\\":\\\"cloum7_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"isLimitNumber\\\":0,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"isUnit\\\":0,\\\"maxLimitNumber\\\":300,\\\"minLimitNumber\\\":0,\\\"numComponentType\\\":0,\\\"readOnly\\\":0,\\\"size\\\":1,\\\"title\\\":\\\"数字\\\",\\\"titleLayout\\\":0,\\\"unitValue\\\":\\\"\\\"}\",\"componentType\":\"number\",\"indexOrder\":8,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\"}]},{\"id\":78,\"formId\":null,\"colNum\":1,\"rowNum\":1,\"merger\":\"[1,2]\",\"indexOrder\":9,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\",\"panelType\":null,\"componentsSettingList\":[{\"id\":78,\"pId\":78,\"className\":\"org.fh.form.components.time.TimeModule\",\"fieldName\":\"cloum8_0\",\"settingJson\":\"{\\\"comKey\\\":\\\"1564569978524\\\",\\\"componentType\\\":\\\"time\\\",\\\"dateFormat\\\":1,\\\"dateType\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"des\\\":\\\"\\\",\\\"earliestTime\\\":\\\"\\\",\\\"fieldName\\\":\\\"cloum8_0\\\",\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"isEarliestTime\\\":1,\\\"isLatestTime\\\":1,\\\"isRequired\\\":0,\\\"isSearchColumn\\\":0,\\\"latestTime\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"title\\\":\\\"日期\\\",\\\"titleLayout\\\":0}\",\"componentType\":\"time\",\"indexOrder\":9,\"createTime\":\"2019-07-31T02:50:10.000+0000\",\"updateTime\":\"2019-07-31T02:50:10.000+0000\"}]}],\"dropColumn\":null}}}"
+						}
+					]
+				},
+				{
+					"name": "删除表单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "formId",
+									"value": "52",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/Form/deleteForm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"Form",
+								"deleteForm"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "编辑表单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":19,\"formUuid\":\"`c1ffff07e1ce4f889511cf4db8d60b75`\",\"des\":\"表单详情\",\"dropColumn\":[],\"isUse\":0,\"name\":\"表单666\",\"panelAllList\":[{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"input\",\"fieldName\":\"\",\"indexOrder\":1,\"settingJson\":\"{\\\"title\\\":\\\"文本框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"minNumber\\\":\\\"0\\\",\\\"maxNumber\\\":\\\"300\\\",\\\"componentType\\\":\\\"input\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"defaultPrompt\\\":\\\"\\\",\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537328419\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":1,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"textarea\",\"fieldName\":\"\",\"indexOrder\":2,\"settingJson\":\"{\\\"title\\\":\\\"多行文本框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"minNumber\\\":\\\"0\\\",\\\"maxNumber\\\":\\\"500\\\",\\\"componentType\\\":\\\"textarea\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"defaultPrompt\\\":\\\"\\\",\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537329559\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":2,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"radio\",\"fieldName\":\"\",\"indexOrder\":3,\"settingJson\":\"{\\\"title\\\":\\\"单选框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"radio\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0}],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537330104\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":2}\"}],\"indexOrder\":3,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"checkbox\",\"fieldName\":\"\",\"indexOrder\":4,\"settingJson\":\"{\\\"title\\\":\\\"复选框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"checkbox\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\",\\\"isOld\\\":0}],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537330573\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":2}\"}],\"indexOrder\":4,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"select\",\"fieldName\":\"\",\"indexOrder\":5,\"settingJson\":\"{\\\"title\\\":\\\"下拉菜单\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"select\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"optionNumber\\\":\\\"\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项3\\\",\\\"optionNumber\\\":\\\"\\\"}],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537331037\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":2}\"}],\"indexOrder\":5,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"multistage\",\"fieldName\":\"\",\"indexOrder\":6,\"settingJson\":\"{\\\"title\\\":\\\"多级下拉框\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"multistage\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537331480\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"oneDefaultWord\\\":\\\"\\\",\\\"twoDefaultWord\\\":\\\"\\\",\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":6,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"enclosure\",\"fieldName\":\"\",\"indexOrder\":7,\"settingJson\":\"{\\\"title\\\":\\\"附件\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"enclosure\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537331904\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":[],\\\"optionLen\\\":-1}\"}],\"indexOrder\":7,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"number\",\"fieldName\":\"\",\"indexOrder\":8,\"settingJson\":\"{\\\"title\\\":\\\"数字\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"minNumber\\\":\\\"0\\\",\\\"maxNumber\\\":\\\"300\\\",\\\"componentType\\\":\\\"number\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"defaultPrompt\\\":\\\"\\\",\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537332334\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":\\\"0\\\",\\\"maxLimitNumber\\\":\\\"300\\\",\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":0,\\\"earSpecifiedTime\\\":0,\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":\\\"\\\",\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":0,\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":8,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1},{\"colNum\":1,\"componentsSettingList\":[{\"componentType\":\"time\",\"fieldName\":\"\",\"indexOrder\":9,\"settingJson\":\"{\\\"title\\\":\\\"日期\\\",\\\"des\\\":\\\"\\\",\\\"titleLayout\\\":0,\\\"size\\\":1,\\\"isRequired\\\":0,\\\"isOnly\\\":0,\\\"isLimitedNumber\\\":0,\\\"componentType\\\":\\\"time\\\",\\\"textType\\\":0,\\\"hiddenHeadlines\\\":0,\\\"isDefaultValue\\\":0,\\\"defaultValue\\\":\\\"\\\",\\\"readOnly\\\":0,\\\"optionSettings\\\":[],\\\"optionLayout\\\":2,\\\"optionNumber\\\":0,\\\"isMultiSelect\\\":0,\\\"associationTable\\\":\\\"\\\",\\\"associationField\\\":\\\"\\\",\\\"isOther\\\":0,\\\"comKey\\\":\\\"1564537333319\\\",\\\"isAccept\\\":0,\\\"numComponentType\\\":0,\\\"isUnit\\\":0,\\\"unitValue\\\":\\\"\\\",\\\"decimalDigits\\\":2,\\\"isLimitNumber\\\":0,\\\"minLimitNumber\\\":0,\\\"maxLimitNumber\\\":300,\\\"dateType\\\":0,\\\"dateFormat\\\":1,\\\"isEarliestTime\\\":1,\\\"earSpecifiedTime\\\":\\\"\\\",\\\"earliestTime\\\":\\\"\\\",\\\"isLatestTime\\\":1,\\\"latestTime\\\":\\\"\\\",\\\"lateSpeciefiedTime\\\":\\\"\\\",\\\"isSearchColumn\\\":0,\\\"multilevelLinkage\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":1,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项1\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":1,\\\"numId\\\":\\\"11\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项11\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项111\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项112\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":1,\\\"numId\\\":\\\"12\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项12\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项121\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项122\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":2,\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项2\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"id\\\":2,\\\"numId\\\":\\\"21\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项21\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项211\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项212\\\"}],\\\"isOther\\\":0}},{\\\"id\\\":2,\\\"numId\\\":\\\"22\\\",\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项22\\\",\\\"nextOption\\\":{\\\"setting\\\":[{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项221\\\"},{\\\"isSelect\\\":0,\\\"optionName\\\":\\\"选项222\\\"}],\\\"isOther\\\":0}}],\\\"isOther\\\":0}}],\\\"isOther\\\":0},\\\"isAllowPartBlank\\\":0,\\\"selectType\\\":0,\\\"threeDefaultWord\\\":\\\"\\\",\\\"limitSize\\\":50,\\\"isLimitSize\\\":0,\\\"isLimitType\\\":0,\\\"limitTypeArr\\\":[{\\\"parName\\\":\\\"文档\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"txt\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"doc/docx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"pdf\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"ppt/pptx\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"xls/xlsx\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"图片\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"jpg/jpeg\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"png\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"gif\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"bmp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"psd\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"tiff\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"视频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"avi\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mp4\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"rmvb\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"3gp\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"mov\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wmv\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"swf\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"音频\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"mp3\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"wma\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"m4a\\\",\\\"childSelect\\\":1}]},{\\\"parName\\\":\\\"压缩包\\\",\\\"parSelect\\\":1,\\\"checked\\\":[{\\\"childName\\\":\\\"rar\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"zip\\\",\\\"childSelect\\\":1},{\\\"childName\\\":\\\"7z\\\",\\\"childSelect\\\":1}]}],\\\"allowMany\\\":0,\\\"allowCount\\\":\\\"\\\",\\\"enclosureValue\\\":\\\"\\\",\\\"optionLen\\\":-1}\"}],\"indexOrder\":9,\"merger\":\"[1,2]\",\"panelType\":0,\"rowNum\":1}],\"status\":1,\"type\":12,\"userNum\":\"1\"}"
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/Form/updateForm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"Form",
+								"updateForm"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "查看表单列表",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userNum",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "pageNum",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "pageSize",
+									"value": "30",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "classIfication",
+									"value": "",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/Form/getUserPlatForm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"Form",
+								"getUserPlatForm"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "查看表单列表 copy",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "userNum",
+									"value": "1",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pageNum",
+									"value": "1",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pageSize",
+									"value": "30",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "classIfication",
+									"value": "",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:10009/nid/Form/getUserPlatFormList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "10009",
+							"path": [
+								"nid",
+								"Form",
+								"getUserPlatFormList"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "填写表单内容",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "str",
+									"value": "{\"obj1\":[{\"data\":\"{\\\"cloum0_0\\\":\\\"测试指标731\\\",\\\"cloum1_0\\\":\\\"测试指标731\\\",\\\"cloum2_0\\\":\\\"选项1\\\",\\\"cloum3_0_0\\\":\\\"选项1\\\",\\\"cloum3_0_1\\\":\\\"选项2\\\",\\\"cloum3_0_2\\\":\\\"选项3\\\",\\\"cloum4_0\\\":\\\"选项1\\\",\\\"cloum5_0_0\\\":\\\"选项1\\\",\\\"cloum5_0_1\\\":\\\"选项11\\\",\\\"cloum6_0\\\":2222,\\\"cloum7_0\\\":\\\"1\\\",\\\"cloum8_0\\\":\\\"2019-07-06\\\"}\",\"formUuid\":\"`8ca9684cc3374a9eb8c568b9c718a2dc`\",\"userNum\":\"admin\"}],\"childTables\":null,\"actionFlag\":0,\"indexLibraryId\":\"5019\"}",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/FillForm/saveForm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"FillForm",
+								"saveForm"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "根据表单类型展示填写有多少条数据",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"formUuid\":\"`8ca9684cc3374a9eb8c568b9c718a2dc`\"\r\n,\"formId\":20\r\n,\"pageNum\":1\r\n,\"beginIndex\":0\r\n,\"pageSize\":10\r\n,\"classification\":12\r\n,\"userNum\":\"admin\"\r\n,\"keyWord\":null\r\n,\"searchColumns\":null\r\n,\"size\":0\r\n,\"searchInputs\":null\r\n,\"userId\":1}"
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/FormData/getFormData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"FormData",
+								"getFormData"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "查看填报的表单信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dataId",
+									"value": "b6240515405b4d2082349544a80e9574",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "formUuid",
+									"value": "`6facd34e15a5425aad351ecd225b4626`",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/Form/examineFormData",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"Form",
+								"examineFormData"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "添加催单",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "workId",
+									"value": "20190812558725",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "sssssssssssss",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/reminder/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"reminder",
+								"add"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "用户相关",
+			"description": "",
+			"item": [
+				{
+					"name": "查看单个用户",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8099/nid/user/view",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"user",
+								"view"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "查看用户列表",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "keyword",
+									"value": "",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "pubOrganizationId",
+									"value": "40288b01609bbb5d01609bc8e2340009",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "dataPriLevel",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/user/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"user",
+								"list"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "首页",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "loginCode",
+							"value": "KNTBtmY1ggXItVBjFO36dX7zVvWg0O6W",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "productPk",
+							"value": "ff8080816bf9b2b1016bfe735c870001",
+							"description": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8099/nid/main/index",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"nid",
+						"main",
+						"index"
+					]
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "dcb07c9f-647c-4237-89f7-e087fde17263",
+					"name": "首页",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "loginCode",
+									"value": "VqfxX9IMm5lhNr5Sd4xjwuGHUtO0q9nF",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "productPk",
+									"value": "ff8080816bf9b2b1016bfe735c870001",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8099/nid/main/index",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8099",
+							"path": [
+								"nid",
+								"main",
+								"index"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"key": "Access-Control-Allow-Credentials",
+							"value": "true",
+							"name": "Access-Control-Allow-Credentials",
+							"description": "Indicates whether or not the response to the request can be exposed when the credentials flag is true. When used as part of a response to a preflight request, this indicates whether or not the actual request can be made using credentials."
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Origin, No-Cache, X-Requested-With, If-Modified-Since, Pragma, Last-Modified, Cache-Control, Expires, Content-Type, X-E4M-With,userId,token",
+							"name": "Access-Control-Allow-Headers",
+							"description": "Used in response to a preflight request to indicate which HTTP headers can be used when making the actual request."
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "POST, GET, OPTIONS, DELETE",
+							"name": "Access-Control-Allow-Methods",
+							"description": "Specifies the method or methods allowed when accessing the resource. This is used in response to a preflight request."
+						},
+						{
+							"key": "Access-Control-Max-Age",
+							"value": "0",
+							"name": "Access-Control-Max-Age",
+							"description": "Indicates how long the results of a preflight request can be cached in seconds."
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 14 Aug 2019 02:37:18 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "rememberMe=deleteMe; Path=/nid; Max-Age=0; Expires=Tue, 13-Aug-2019 02:37:17 GMT",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"name": "Transfer-Encoding",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"key": "XDomainRequestAllowed",
+							"value": "1",
+							"name": "XDomainRequestAllowed",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/nid",
+							"secure": false,
+							"value": "1597A9A0E7C2B0D12447E2AB407D1A94",
+							"key": "JSESSIONID"
+						},
+						{
+							"expires": "Tue Jan 19 2038 11:14:07 GMT+0800 (中国标准时间)",
+							"httpOnly": true,
+							"domain": "localhost",
+							"path": "/",
+							"secure": false,
+							"value": "258A438DD5A4E2C5793BCA6F99142FE3",
+							"key": "JSESSIONID"
+						}
+					],
+					"responseTime": 437,
+					"body": "{\"result\":\"success\",\"menuList\":[{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016c02adbe3a0009\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016bffcb2c870001\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"首 页\",\"menu_URL\":\"/\",\"shiro_KEY\":null}],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016bffcb2c870001\",\"menu_TYPE\":\"1\",\"parent_ID\":\"\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"首页\",\"menu_URL\":\"/\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c69ffc15b0002\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"创建工单\",\"menu_URL\":\"/workOrder/create\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a0048170003\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"自定义查询\",\"menu_URL\":\"/workOrder/search\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a0291b10005\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"待处理的工单\",\"menu_URL\":\"/workOrder/pending\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a0307040006\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"我处理的工单\",\"menu_URL\":\"/workOrder/ownHandle\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a0420cf0007\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"角色内未分配的工单\",\"menu_URL\":\"/workOrder/roleUndistributed\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a04fa2d0008\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"角色内待处理的工单\",\"menu_URL\":\"/workOrder/rolePending\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a063fd60009\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"角色内处理的工单\",\"menu_URL\":\"/workOrder/roleHandle\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a06bbb5000a\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"全部未分配工单\",\"menu_URL\":\"/workOrder/allUndistributed\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a0743c3000b\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"全部待处理\",\"menu_URL\":\"/workOrder/allPending\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a07b0c1000c\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"全部已解决\",\"menu_URL\":\"/workOrder/allHandle\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a0823a6000d\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"全部已关闭\",\"menu_URL\":\"/workOrder/allClosed\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a08ab69000e\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"全部已删除\",\"menu_URL\":\"/workOrder/allDeleted\",\"shiro_KEY\":null}],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016c02aa1ef20005\",\"menu_TYPE\":\"1\",\"parent_ID\":\"\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"工单中心\",\"menu_URL\":\"/workOrder\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016c02d74a73000c\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02a8ecab0002\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"角色管理\",\"menu_URL\":\"/userManage/roleManage\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a11e6d60040\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02a8ecab0002\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"角色组管理\",\"menu_URL\":\"/userManage/roleGroup\",\"shiro_KEY\":null}],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016c02a8ecab0002\",\"menu_TYPE\":\"1\",\"parent_ID\":\"\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"用户管理\",\"menu_URL\":\"/userManage\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016c02d80e74000d\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02a9d2f80004\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"自定义工单分类\",\"menu_URL\":\"/setting/class\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016c02d8c94a000e\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02a9d2f80004\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"工单自定义模版\",\"menu_URL\":\"/setting/template\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016c02da39fd000f\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02a9d2f80004\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"工单自定义工作流\",\"menu_URL\":\"/setting/workFlow\",\"shiro_KEY\":null},{\"target\":\"treeFrame\",\"parentMenu\":null,\"subMenu\":[],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816c42427b016c6a1632f10057\",\"menu_TYPE\":\"2\",\"parent_ID\":\"ff8080816bfeae05016c02a9d2f80004\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"工单基础设置\",\"menu_URL\":\"/setting/base\",\"shiro_KEY\":null}],\"hasMenu\":true,\"menu_STATE\":\"1\",\"menu_ID\":\"ff8080816bfeae05016c02a9d2f80004\",\"menu_TYPE\":\"1\",\"parent_ID\":\"\",\"menu_ORDER\":\"1\",\"menu_NAME\":\"工单设置\",\"menu_URL\":\"/setting\",\"shiro_KEY\":null}]}"
+				}
+			]
+		},
+		{
+			"name": "查看部门列表接口",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8099/nid/user/viewOrg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"nid",
+						"user",
+						"viewOrg"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

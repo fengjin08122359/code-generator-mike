@@ -1,0 +1,45 @@
+{
+	"info": {
+		"_postman_id": "fdb51c21-a5a5-473c-bc7f-16a9a40a8551",
+		"name": "工单接口",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8081/nid/member/search/?context=172",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/nid/member/search/?context=172",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"nid",
+						"member",
+						"search",
+						""
+					],
+					"query": [
+						{
+							"key": "context",
+							"value": "172"
+						}
+					]
+				},
+				"description": "客户模糊查询"
+			},
+			"response": []
+		}
+	]
+}

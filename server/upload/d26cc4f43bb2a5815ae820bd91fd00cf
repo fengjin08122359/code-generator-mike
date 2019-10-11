@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "dffb0812-30ac-48d1-896c-ab82dbc173d0",
+		"name": "角色组管理",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "查询角色组新增未被使用的流程标识",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8099/nid/dictionaries/getUnusedGroupKeys",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8099",
+					"path": [
+						"nid",
+						"dictionaries",
+						"getUnusedGroupKeys"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

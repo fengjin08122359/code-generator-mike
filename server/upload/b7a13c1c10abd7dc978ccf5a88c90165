@@ -1,0 +1,175 @@
+14:26:33 log ["loginBox.userStatus","online"]
+14:26:33 log isLoginSave
+14:26:33 openfire ["test",true]
+14:26:34 log Info: WebSocket closed. code=1000
+14:26:34 log []
+14:26:37 log $.isOnpagefalse
+14:27:20 log $.isOnpagetrue
+14:27:22 log $.isOnpagefalse
+14:27:29 log $.isOnpagetrue
+14:27:30 log $.isOnpagefalse
+14:29:32 log $.isOnpagetrue
+14:29:33 log $.isOnpagefalse
+14:29:34 log $.isOnpagetrue
+14:29:34 log $.isOnpagefalse
+14:30:03 log $.isOnpagetrue
+14:30:04 log $.isOnpagefalse
+14:30:05 log $.isOnpagetrue
+14:30:06 log ["login","loginCompany:monkey","loginName:monkey1","loginPassword:123456"]
+14:30:07 log login
+14:30:07 openfire ["changeStatus status","online"]
+14:30:07 openfire ["changeStatus","online"]
+14:30:07 log ["showTab","dialogueContentIframe"]
+14:30:07 log ["getSensitiveVocabulary","神经病:tmd:nnd:你妹"]
+14:30:07 log getConfig
+14:30:07 openfire ["init",true]
+14:30:07 openfire ["quickLogin","","","","online"]
+14:30:07 log Info: WebSocket connection opened.
+14:30:07 openfire ["doMessage","{\"chatId\":\"\",\"content\":\"{\\\"targetMsgId\\\":\\\"Other1557297007546\\\"}\",\"messageId\":\"Other1557297007546\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:07 openfire ["doMessage","{\"content\":\"{\\\"queueNum\\\":\\\"0\\\"}\",\"firstSendTime\":0,\"messageId\":\"UGVB2-86164\",\"resendTimes\":1,\"sendTime\":1557297007729,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"QUEUE\"}"]
+14:30:07 log ["receiveMessage","{\"type\":\"queueNum\",\"content\":\"0\"}"]
+14:30:07 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"UGVB2-86164\\\"}\",\"messageId\":\"UGVB2-86164\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:07 log $.userStatus:online
+14:30:07 openfire ["changeStatus status","offline"]
+14:30:07 openfire ["changeStatus","offline"]
+14:30:07 openfire ["changeStatus currentStatus","offline"]
+14:30:07 openfire ["connect","ff808081620039170162034bd52d00e5","monkey1","e10adc3949ba59abbe56e057f20f883e",15476110423122460]
+14:30:07 openfire ["loginInWeb","ff808081620039170162034bd52d00e5","monkey1","e10adc3949ba59abbe56e057f20f883e","offline"]
+14:30:07 openfire ["doMessage","{\"chatId\":\"\",\"content\":\"{\\\"targetMsgId\\\":\\\"Other1557297007628\\\"}\",\"messageId\":\"Other1557297007628\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:07 openfire ["doMessage","{\"chatId\":\"\",\"content\":\"{\\\"targetMsgId\\\":\\\"Other1557297007629\\\"}\",\"messageId\":\"Other1557297007629\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:07 openfire ["doMessage","{\"content\":\"{\\\"queueNum\\\":\\\"0\\\"}\",\"firstSendTime\":0,\"messageId\":\"UGVB2-86174\",\"resendTimes\":0,\"sendTime\":1557297007834,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"QUEUE\"}"]
+14:30:07 log ["receiveMessage","{\"type\":\"queueNum\",\"content\":\"0\"}"]
+14:30:07 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"UGVB2-86174\\\"}\",\"messageId\":\"UGVB2-86174\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:07 openfire ["doMessage","{\"content\":\"{\\\"queueNum\\\":\\\"0\\\"}\",\"firstSendTime\":0,\"messageId\":\"UGVB2-86183\",\"resendTimes\":0,\"sendTime\":1557297007941,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"QUEUE\"}"]
+14:30:07 log ["receiveMessage","{\"type\":\"queueNum\",\"content\":\"0\"}"]
+14:30:07 log getTopic
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"UGVB2-86183\\\"}\",\"messageId\":\"UGVB2-86183\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"queueNum\\\":\\\"0\\\"}\",\"firstSendTime\":0,\"messageId\":\"UGVB2-86192\",\"resendTimes\":0,\"sendTime\":1557297008048,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"QUEUE\"}"]
+14:30:08 log ["receiveMessage","{\"type\":\"queueNum\",\"content\":\"0\"}"]
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"login\\\":false}\",\"firstSendTime\":0,\"fromClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"messageId\":\"ws_pf\",\"resendTimes\":0,\"sendTime\":1557297008153,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"GET_LOGIN_ACK\"}"]
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"UGVB2-86192\\\"}\",\"messageId\":\"UGVB2-86192\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"ws_pf\\\"}\",\"messageId\":\"ws_pf\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:08 log ["loadProgress update",0,1]
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"status\\\":\\\"offline\\\"}\",\"firstSendTime\":0,\"fromClient\":\"ff808081620039170162034bd52d00e5-monkey1\",\"messageId\":\"UGVB2-106820\",\"resendTimes\":0,\"sendTime\":1557297008678,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"LOGIN\"}"]
+14:30:08 log ["isLogin","isreconnect:false"]
+14:30:08 openfire ["changeStatus status","online"]
+14:30:08 openfire ["changeStatus","online"]
+14:30:08 openfire ["changeStatus currentStatus","online"]
+14:30:08 log ["userStatusChange","online"]
+14:30:08 openfire ["changeStatus status","online"]
+14:30:08 log ["changeStatus","online"]
+14:30:08 openfire ["changeStatus status","online"]
+14:30:08 openfire ["doMessage","{\"chatId\":\"\",\"content\":\"{\\\"targetMsgId\\\":\\\"Other1557297008555\\\"}\",\"messageId\":\"Other1557297008555\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"UGVB2-106820\\\"}\",\"messageId\":\"UGVB2-106820\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"status\\\":\\\"online\\\"}\",\"firstSendTime\":0,\"fromClient\":\"ff808081620039170162034bd52d00e5-monkey1\",\"messageId\":\"UGVB2-106822\",\"resendTimes\":0,\"sendTime\":1557297008884,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"STATE_CHANGE\"}"]
+14:30:08 log ["changeStatus","online"]
+14:30:08 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"UGVB2-106822\\\"}\",\"messageId\":\"UGVB2-106822\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:09 log ["loadProgress update",1,1]
+14:30:09 log ["showTab","dialogueContentIframe"]
+14:30:09 openfire ["changeStatus status","online"]
+14:30:11 log $.isOnpagefalse
+14:30:11 log $.isOnpagetrue
+14:30:11 log $.isOnpagefalse
+14:30:12 openfire ["doMessage","{\"content\":\"{\\\"queueNum\\\":\\\"0\\\"}\",\"firstSendTime\":0,\"messageId\":\"UGVB2-106824\",\"resendTimes\":0,\"sendTime\":1557297012224,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"QUEUE\"}"]
+14:30:12 log ["receiveMessage","{\"type\":\"queueNum\",\"content\":\"0\"}"]
+14:30:12 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"UGVB2-106824\\\"}\",\"messageId\":\"UGVB2-106824\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:19 openfire ["doMessage","{\"chatId\":\"ff8080816a869977016a961b26a4043b\",\"content\":\"{\\\"businessName\\\":\\\"monkey1 -&amp;gt; A -&amp;gt; 1\\\",\\\"operatingSystem\\\":{\\\"browser\\\":\\\"Chrome浏览器\\\",\\\"language\\\":\\\"zh-CN\\\",\\\"operatorSystem\\\":\\\"Win10\\\",\\\"sysInfo\\\":\\\"pc\\\",\\\"sysResolution\\\":\\\"1366×768\\\"},\\\"companyPk\\\":\\\"ff808081620039170162034bd52d00e5\\\",\\\"usersource\\\":\\\"默认方案\\\",\\\"title\\\":\\\"\\\",\\\"browsingNum\\\":\\\"\\\",\\\"username\\\":\\\"访客215\\\",\\\"oldService\\\":\\\"ff808081620039170162034bd52d00e5-monkey1\\\",\\\"businessId\\\":\\\"ff808081621f731b01621f8029ab0008\\\",\\\"ipName\\\":\\\"未知地区\\\",\\\"customer_busy\\\":\\\"200000\\\",\\\"chatNum\\\":\\\"0\\\",\\\"keyword\\\":\\\"\\\",\\\"lastTime\\\":\\\"\\\",\\\"PAGE_TIMEOUT\\\":\\\"1000000\\\",\\\"robot\\\":\\\"robot_any800_92.168.11.215@openfire-test/Smack\\\",\\\"visitor\\\":{\\\"MSN\\\":\\\"\\\",\\\"QQ\\\":\\\"\\\",\\\"address\\\":\\\"\\\",\\\"company\\\":\\\"\\\",\\\"email\\\":\\\"\\\",\\\"extension\\\":\\\"\\\",\\\"memberId\\\":\\\"\\\",\\\"mobile\\\":\\\"\\\",\\\"phone\\\":\\\"\\\",\\\"realName\\\":\\\"\\\",\\\"sex\\\":0,\\\"visitorId\\\":\\\"C0000000215\\\",\\\"visitorName\\\":\\\"访客215\\\"},\\\"ip\\\":\\\"192.168.11.1, 192.168.11.15\\\",\\\"opname\\\":\\\"ff808081620039170162034bd52d00e5-monkey1\\\",\\\"userID\\\":\\\"C0000000215\\\",\\\"chatID\\\":\\\"ff8080816a869977016a961b26a4043b\\\",\\\"firstTime\\\":\\\"\\\",\\\"commodity\\\":{\\\"shopImgUrl\\\":\\\"\\\",\\\"shopName\\\":\\\"\\\",\\\"shopNum\\\":\\\"\\\",\\\"shopPrice\\\":\\\"\\\",\\\"shopUrl\\\":\\\"\\\"},\\\"isWs\\\":\\\"true\\\",\\\"langPk\\\":\\\"ff8080816200c5c60162034bd7a600b4\\\",\\\"fromPage\\\":\\\"\\\",\\\"visitorId\\\":\\\"C0000000215\\\",\\\"searchEngine\\\":\\\"\\\"}\",\"firstSendTime\":0,\"fromClient\":\"ff808081620039170162034bd52d00e5-monkey1\",\"messageId\":\"UGVB2-106844\",\"resendTimes\":0,\"sendTime\":1557297020012,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"PRESENCE_JOIN\"}"]
+14:30:19 log ["receiveInvite","{\"reason\":{\"businessName\":\"monkey1 -&amp;gt; A -&amp;gt; 1\",\"operatingSystem\":{\"browser\":\"Chrome浏览器\",\"language\":\"zh-CN\",\"operatorSystem\":\"Win10\",\"sysInfo\":\"pc\",\"sysResolution\":\"1366×768\"},\"companyPk\":\"ff808081620039170162034bd52d00e5\",\"usersource\":\"默认方案\",\"title\":\"\",\"browsingNum\":\"\",\"username\":\"访客215\",\"oldService\":\"ff808081620039170162034bd52d00e5-monkey1\",\"businessId\":\"ff808081621f731b01621f8029ab0008\",\"ipName\":\"未知地区\",\"customer_busy\":\"200000\",\"chatNum\":\"0\",\"keyword\":\"\",\"lastTime\":\"\",\"PAGE_TIMEOUT\":\"1000000\",\"robot\":\"robot_any800_92.168.11.215@openfire-test/Smack\",\"visitor\":{\"MSN\":\"\",\"QQ\":\"\",\"address\":\"\",\"company\":\"\",\"email\":\"\",\"extension\":\"\",\"memberId\":\"\",\"mobile\":\"\",\"phone\":\"\",\"realName\":\"\",\"sex\":0,\"visitorId\":\"C0000000215\",\"visitorName\":\"访客215\"},\"ip\":\"192.168.11.1, 192.168.11.15\",\"opname\":\"ff808081620039170162034bd52d00e5-monkey1\",\"userID\":\"C0000000215\",\"chatID\":\"ff8080816a869977016a961b26a4043b\",\"firstTime\":\"\",\"commodity\":{\"shopImgUrl\":\"\",\"shopName\":\"\",\"shopNum\":\"\",\"shopPrice\":\"\",\"shopUrl\":\"\"},\"isWs\":\"true\",\"langPk\":\"ff8080816200c5c60162034bd7a600b4\",\"fromPage\":\"\",\"visitorId\":\"C0000000215\",\"searchEngine\":\"\",\"type\":\"\"},\"room\":\"ff8080816a869977016a961b26a4043b\",\"from\":\"\"}"]
+14:30:19 log ["userList.getChatId","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo",false]
+14:30:19 log ["userList.removeByChatId","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.visitorMerge","ff8080816a869977016a961b26a4043b","C0000000215"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getChatId","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["saveOperatorEvent","ff8080816a869977016a961b26a4043b","join","monkey1"]
+14:30:19 log ["userList.getInfo",""]
+14:30:19 log ["userList.getInfo",""]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816200c5c60162034bd8610105, '默认分类')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d0415bd0040, '分类1')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d0437980041, '分类2')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d044fbe0042, '分类3')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d046da00043, '分类31')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d0486360044, '分类32')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log userList.updated.visitorIdC0000000215
+14:30:19 log ["selectChat","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["set editor",""]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816200c5c60162034bd8610105, '默认分类')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d0415bd0040, '分类1')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d0437980041, '分类2')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d044fbe0042, '分类3')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d046da00043, '分类31')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["&amp;lt;FancytreeNode(#ff8080816219bf1c01621d0486360044, '分类32')&amp;gt;","nodeSetSelected(false)"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:19 log userList.updated.visitorIdC0000000215
+14:30:19 warn 3.1557297019980
+14:30:19 warn 4.1557297019983
+14:30:19 log userList.updated.visitorIdC0000000215
+14:30:19 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"UGVB2-106844\\\"}\",\"messageId\":\"UGVB2-106844\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:19 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log interface.addMessage
+14:30:20 log interface.addMessage
+14:30:20 warn 3.1557297020020
+14:30:20 warn 3.1557297020027
+14:30:20 warn 4.1557297020029
+14:30:20 warn 4.1557297020030
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["preview",""]
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log userList.updated.visitorIdC0000000215
+14:30:20 log userList.updated.visitorIdC0000000215
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:20 log ["preview",""]
+14:30:21 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:21 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:21 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:21 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:21 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:21 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:21 log userList.updated.visitorIdC0000000215
+14:30:21 log userList.updated.visitorIdC0000000215
+14:30:21 log ["userList.getChatId","ff8080816a869977016a961b26a4043b"]
+14:30:21 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:21 openfire ["sendMessage","1111","ff8080816a869977016a961b26a4043b","C0000000215"]
+14:30:21 log interface.addMessage
+14:30:21 warn 3.1557297021937
+14:30:21 warn 3.1557297021952
+14:30:21 warn 4.1557297021954
+14:30:21 warn 4.1557297021957
+14:30:21 openfire ["doMessage","{\"chatId\":\"ff8080816a869977016a961b26a4043b\",\"content\":\"{\\\"targetMsgId\\\":\\\"Other1557297021917\\\"}\",\"messageId\":\"Other1557297021917\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:21 warn 3.1557297021970
+14:30:21 warn 4.1557297021976
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log ["preview",""]
+14:30:22 openfire ["doMessage","{\"chatId\":\"ff8080816a869977016a961b26a4043b\",\"content\":\"{\\\"msg\\\":\\\"1111\\\"}\",\"firstSendTime\":1557297022178,\"fromClient\":\"ff808081620039170162034bd52d00e5-monkey1\",\"messageId\":\"Other1557297021917\",\"resendTimes\":0,\"sendTime\":1557297022345,\"toClient\":\"CSRff808081620039170162037e7ef1016815476110423122460\",\"type\":\"CHAT\"}"]
+14:30:22 openfire ["doMessage","{\"content\":\"{\\\"targetMsgId\\\":\\\"Other1557297021917\\\"}\",\"messageId\":\"Other1557297021917\",\"resendTimes\":0,\"type\":\"RECEIPTS\"}"]
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log userList.updated.visitorIdC0000000215
+14:30:22 log userList.updated.visitorIdC0000000215
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log ["userList.getInfo","ff8080816a869977016a961b26a4043b"]
+14:30:22 log previewHide

@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "224ab93f-8ec8-4804-b915-57563b9be8b3",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "method",
+							"value": "getNowTime",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ronghe.any800.com/any800/echatManager.do",
+					"protocol": "http",
+					"host": [
+						"ronghe",
+						"any800",
+						"com"
+					],
+					"path": [
+						"any800",
+						"echatManager.do"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isWebSocketSupported",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://ronghe.any800.com/any800/echat.do?method=isWebSocketSupported",
+					"protocol": "http",
+					"host": [
+						"ronghe",
+						"any800",
+						"com"
+					],
+					"path": [
+						"any800",
+						"echat.do"
+					],
+					"query": [
+						{
+							"key": "method",
+							"value": "isWebSocketSupported"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "test2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "method",
+							"value": "getNowTime",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://ronghe.any800.com/any800/echatManager.do",
+					"protocol": "http",
+					"host": [
+						"ronghe",
+						"any800",
+						"com"
+					],
+					"path": [
+						"any800",
+						"echatManager.do"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

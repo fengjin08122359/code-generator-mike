@@ -1,0 +1,24 @@
+{
+  "name": "code-generator-mike",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./bin/index.js",
+  "bin": {
+    "code-generator-mike": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set DEBUG=* & node bin/index.js",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start",
+    "start:redis": "cd redis && redis-server.exe redis.windows.conf"
+  },
+  "author": "mike",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^3.0.0",
+    "debug": "^4.1.1",
+    "ora": "^3.4.0",
+    "shelljs": "^0.8.3"
+  }
+}

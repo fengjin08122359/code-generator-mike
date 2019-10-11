@@ -1,0 +1,29 @@
+{
+  "port": "8081",
+  "proxy": {
+    "/project/": {
+      "target": "http://127.0.0.1:19090",
+      "changeOrigin": true
+    },
+    "/components/": {
+      "target": "http://127.0.0.1:19090",
+      "changeOrigin": true
+    },
+    "/exportZip/": {
+      "target": "http://127.0.0.1:19090",
+      "changeOrigin": true
+    },
+    "/server/": {
+      "target": "http://127.0.0.1:19090",
+      "changeOrigin": true
+    },
+    "/uploadFile/": {
+      "target": "http://127.0.0.1:19090",
+      "changeOrigin": true
+    },
+    "/postman/": {
+      "target": "http://127.0.0.1:19090",
+      "changeOrigin": true
+    }
+  }
+}
