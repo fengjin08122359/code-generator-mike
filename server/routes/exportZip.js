@@ -6,7 +6,9 @@ var {generateComponents, generatePages, generateRouters, generateHttplink, clear
 router.post('/component', async function(req, res, next) {
   var id = req.body.id
   clearAim()
-  await generateComponents(id, db.getArrange({id}) || [])
+  var result = await db.getArrange({id})
+  console.log(result)
+  await generateComponents(id,result.list || [])
   await createZip()
   res.send({src: './server/dist.zip'});
 });
