@@ -40,7 +40,7 @@
     "babel-plugin-dynamic-import-webpack": "file:node_modules/babel-plugin-dynamic-import-webpack",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-3": "^6.24.1",
-    "electron": "^6.0.0",
+    "electron": "^18.3.7",
     "element-ui": "^2.11.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
